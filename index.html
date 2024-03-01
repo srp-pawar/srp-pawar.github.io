@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>title</title>
-</head>
-<body>
-    <?xml version="1.0" encoding="UTF-8"?>
+<HTML>
+    <body>
+    <!-- some typical HTML document with
+    <h1>, <h2>, <p>, etc. -->
+        <textarea rows="20" cols="40" style="border:none;">
+            <?xml version="1.0" encoding="UTF-8"?>
 <Response>
 	<Say>
 		Hello from Synapsenet! Thank you for calling.
 	</Say>
 	<Play>https://api.twilio.com/Cowbell.mp3</Play>
 </Response>
-</body>
-</html>
+        </textarea>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const x=document.getElementById('myxml').innerHTML;
+        })
+    </script>
+    </html>
+    
